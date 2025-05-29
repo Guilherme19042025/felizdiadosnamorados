@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para o Amor da Minha Vida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #ffd6e8, #fff);
+      color: #800040;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #ffe6f0;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #cc005f;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      text-align: center;
+      color: #cc005f;
+    }
+    /* Galeria atualizada para fotos espalhadas */
+    .gallery {
+      position: relative;
+      height: 600px; /* altura para conter as fotos */
+      margin-top: 40px;
+    }
+    .gallery img {
+      position: absolute;
+      width: 120px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: floatImg 6s ease-in-out infinite;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.1) rotate(calc(var(--init-rotate) + 5deg));
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      animation-play-state: paused;
+      z-index: 10;
+    }
+    /* Posições e rotações das fotos */
+    .gallery img:nth-child(1) { top: 10px; left: 10px; --init-rotate: -5deg; animation-delay: 0s; }
+    .gallery img:nth-child(2) { top: 50px; left: 160px; --init-rotate: 3deg; animation-delay: 1s; }
+    .gallery img:nth-child(3) { top: 120px; left: 300px; --init-rotate: -2deg; animation-delay: 2s; }
+    .gallery img:nth-child(4) { top: 30px; left: 460px; --init-rotate: 6deg; animation-delay: 3s; }
+    .gallery img:nth-child(5) { top: 200px; left: 50px; --init-rotate: -4deg; animation-delay: 4s; }
+    .gallery img:nth-child(6) { top: 250px; left: 220px; --init-rotate: 5deg; animation-delay: 5s; }
+    .gallery img:nth-child(7) { top: 320px; left: 400px; --init-rotate: -6deg; animation-delay: 0.5s; }
+    .gallery img:nth-child(8) { top: 150px; left: 600px; --init-rotate: 4deg; animation-delay: 1.5s; }
+    .gallery img:nth-child(9) { top: 350px; left: 100px; --init-rotate: -3deg; animation-delay: 2.5s; }
+    .gallery img:nth-child(10){ top: 400px; left: 500px; --init-rotate: 2deg; animation-delay: 3.5s; }
+
+    /* Animação suave de flutuação */
+    @keyframes floatImg {
+      0%, 100% {
+        transform: translateY(0) rotate(var(--init-rotate));
+      }
+      50% {
+        transform: translateY(-10px) rotate(calc(var(--init-rotate) + 2deg));
+      }
+    }
+
+    .message {
+      font-style: italic;
+      font-size: 1.2em;
+      text-align: center;
+      white-space: pre-wrap;
+      background-color: rgba(255, 230, 240, 0.4);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+    audio {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      z-index: 999;
+    }
+    @keyframes float {
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Música de fundo (oculta) -->
+<audio autoplay loop hidden>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3" />
+  Seu navegador não suporta áudio HTML5.
+</audio>
+
+<header>
+  <h1>Feliz Dia dos Namorados, Amor! 💖</h1>
+  <p>Você é o amor da minha vida.</p>
+</header>
+
+<section>
+  <h2>💖 Nossa História 💖</h2>
+  <p class="message">Nosso namoro começou a pouco tempo, mais nossa história não, e desde então minha vida melhorou em tudo...</p>
+</section>
+
+<section>
+  <h2>💖 Nossas Memórias 💖</h2>
+  <div class="gallery">
+    <img src="foto1.png" alt="Foto nossa juntos" />
+    <img src="foto2.png" alt="Foto nossa juntos" />
+    <img src="foto3.jpg" alt="Foto nossa juntos" />
+    <img src="foto4.jpg" alt="Foto nossa juntos" />
+    <img src="foto5.jpg" alt="Foto nossa juntos" />
+    <img src="foto6.jpg" alt="Foto nossa juntos" />
+    <img src="foto7.jpg" alt="Foto nossa juntos" />
+    <img src="foto8.jpg" alt="Foto nossa juntos" />
+    <img src="foto9.jpg" alt="Foto nossa juntos" />
+    <img src="foto10.jpg" alt="Foto nossa juntos" />
+  </div>
+</section>
+
+<section>
+  <h2>💖 Minha Declaração 💖</h2>
+  <p class="message">
+    Amor eu te amo muito e muito mesmo,
+    você é o amor da minha vida,
+    quero construir meu futuro com você, crescer e aprender as coisas da vida juntos.
+    Temos muito pra aprender, mas quero aprender ao seu lado.
+    Quero me tornar melhor pra você e para nós.
+
+    Muito obrigado por tudo, por estar em minha vida, por estar comigo por cada momento,
+    pelas nossas brincadeiras, pelas coisas que só a gente sabe.
+    Eu nem sempre sou o melhor com palavras ou textos, mas por você eu tento ser o melhor possível.
+    Não sou o namorado perfeito, mas irei sempre buscar ser.
+
+    Saiba que pode contar comigo sempre, sempre mesmo,
+    pois além de namorado sou seu melhor amigo.
+    Você tem minha total confiança também.
+    Estamos juntos na saúde e na doença, na alegria e na tristeza.
+
+    Só não nos casamos mais se Deus não permitir, mas um dia vamos.
+    Meu amor por você nunca vai morrer, pois eu te amo com minha alma e ela é eterna.
+    Você tem uma parte minha que só você pode ter.
+
+    Me desculpa se alguma vez te fiz algo de mal ou que você não gostou,
+    te peço perdão por isso e espero que nunca se repita.
+
+    Você é linda de corpo e alma, exala beleza, não só corporal,
+    cada gesto seu e ato tem meu coração, cada detalhe seu...
+    Tudo em você é único.
+
+    Você me proporciona o amor que mereço.
+    Você é tudo em minha vida, amor.
+    Torço pela sua vitória sempre.
+    Eu te amo meu amor, com toda minha alma!
+  </p>
+</section>
+
+<section>
+  <h2>💖 Lado a Lado 💖</h2>
+  <p class="message">
+    Você não é a pessoa mais fácil de lidar,  
+    Mas também não é difícil de amar.  
+    E é por isso que meu amor vai sempre durar,  
+    Tão profundo quanto o fundo do mar.  
+
+    Entenda, meu amor, é com você que quero estar,  
+    É ao seu lado que sonho em me casar.  
+    Criar nossos filhos, ver a vida passar,  
+    Cheios de histórias pra relembrar.  
+
+    Aventuras vamos descobrir,  
+    Mundos novos vamos construir.  
+    Dificuldades podem surgir,  
+    Mas juntos, vamos resistir.  
+
+    Pois quando estamos lado a lado,  
+    Nada parece tão complicado.  
+    Veremos nossos filhos crescer,  
+    E juntos vamos envelhecer.
+  </p>
+</section>
+
+<footer>
+  Feito com amor 💘 por Guilherme.
+</footer>
+
+<!-- Efeito de corações flutuando -->
+<script>
+  setInterval(() => {
+    const heart = document.createElement('div');
+    heart.textContent = '💖';
+    heart.style.position = 'fixed';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.top = '100vh';
+    heart.style.fontSize = (Math.random() * 10 + 20) + 'px';
+    heart.style.opacity = '0.8';
+    heart.style.animation = 'float 4s linear forwards';
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 4000);
+  }, 500);
+</script>
+</body>
+</html>
